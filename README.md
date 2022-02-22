@@ -8,7 +8,7 @@ Permite gerenciar as informações das propriedades dos países (identificador �
 * MySQL
 
 # Acessos aos recursos da API
-* Criar um novo país com todas as suas propriedades:__
+* Criar um novo país com todas as suas propriedades:<br />
 [POST] https://desafio-2ibi.herokuapp.com/api/paises
 
 
