@@ -23,7 +23,7 @@ public class Pais {
     private String capital;
     private String regiao;
 
-    @Column(name = "sub_regiao")
+    // @Column(name = "sub_regiao")
     private String subRegiao;
     private String area;    
 }

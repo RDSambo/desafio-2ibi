@@ -24,8 +24,9 @@ public class PaisServiceImpl implements PaisService{
 
     @Override
     public List<Pais> getAllPaises(String property, String direction){
-        if(property != null && !property.isEmpty() && direction != null && !direction.isEmpty()){
-            Sort.Direction sort = direction.equalsIgnoreCase("desc")? Sort.Direction.DESC:Sort.Direction.ASC; 
+        if(property != null && !property.isEmpty()){
+
+            Sort.Direction sort = (direction != null && !direction.isEmpty() && direction.equalsIgnoreCase("desc"))? Sort.Direction.DESC:Sort.Direction.ASC; 
             return paisRepository.findAll(Sort.by(sort, property));
         }
         return paisRepository.findAll();
